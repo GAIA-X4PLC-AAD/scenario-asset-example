@@ -1,0 +1,73 @@
+esmini GIT REV: N/A
+esmini GIT TAG: N/A
+esmini GIT BRANCH: N/A
+esmini BUILD VERSION: 3884
+No fixed timestep specified - running in realtime speed
+Generated seed 2876926797
+Loading ALKS_Scenario_4.4_1_CutInNoCollision_TEMPLATE.xosc (v1.1)
+0 variables
+Loaded OpenDRIVE: ./ALKS_Road_straight.xodr
+Missing esminiController property, using controller name: ALKSController
+Expr ${$Ego_InitSpeed_Ve0_kph / 3.6} = 60.0 / 3.6 = 16.6666666667
+Expr ${$CutInVehicle_HeadwayDistanceTrigger_dx0_m + (-10.0 * ($CutInVehicle_RelativeInitSpeed_Ve0_Vo0_kph / 3.6))} = 30.0 + (-10.0 * (-20.0 / 3.6)) = 85.5555555556
+Expr ${$CutInVehicle_RelativeInitSpeed_Ve0_Vo0_kph / 3.6} = -20.0 / 3.6 = -5.5555555556
+Expr ${$CutInVehicle_Acceleration_Target_kph / 3.6} = 40.0 / 3.6 = 11.1111111111
+8 parameters:
+   CutInVehicle_Acceleration_Target_kph = 40.0
+   CutInVehicle_Acceleration_Rate_mps2 = 0.0
+   CutInVehicle_LaneChange_MaxLateralVelocity_Vy_mps = 2.0
+   CutInVehicle_HeadwayDistanceTrigger_dx0_m = 30.0
+   CutInVehicle_RelativeInitSpeed_Ve0_Vo0_kph = -20.0
+   CutInVehicle_InitPosition_RelativeLaneId = -1
+   CutInVehicle_Model = car
+   Ego_InitSpeed_Ve0_kph = 60.0
+0.000: Viewer failure. Probably requested level of Anti Aliasing (4 multisamples) is not supported. Making another attempt without Anti-Alias and on first screen.
+0.000: No scenegraph 3D model loaded. Generating a simplistic one...
+0.000: Failed to load visual model car_white.osgb. Also tried the following paths:
+0.000:     /home/heue_fi/esmini/bin/./car_white.osgb
+0.000:     /home/heue_fi/esmini/bin/../models/car_white.osgb
+0.000:     /home/heue_fi/esmini/bin/.//../resources/models/car_white.osgb
+0.000:     /home/heue_fi/esmini/bin/./car_white.osgb
+0.000:     .//./car_white.osgb
+0.000:     .//../models/car_white.osgb
+0.000:     .//.//../resources/models/car_white.osgb
+0.000:     .//./car_white.osgb
+0.000:     ././car_white.osgb
+0.000:     ./../models/car_white.osgb
+0.000:     ././/../resources/models/car_white.osgb
+0.000:     ././car_white.osgb
+0.000: Creating a dummy model instead
+0.000: Init Ego TeleportAction initState -> startTransition -> runningState
+0.000: Starting teleport Action
+0.000: Ego New position:
+0.000: Pos(5.00, -8.00, 0.00) Rot(0.00, 0.00, 0.00) roadId 0 laneId -4 offset 0.00 t -8.00
+0.000: Init Ego LongitudinalAction initState -> startTransition -> runningState
+0.000: Init CutInVehicle TeleportAction initState -> startTransition -> runningState
+0.000: Starting teleport Action
+0.000: CutInVehicle New position:
+0.000: Pos(90.56, -11.50, 0.00) Rot(0.00, 0.00, 0.00) roadId 0 laneId -5 offset 0.00 t -11.50
+0.000: Init CutInVehicle LongitudinalAction initState -> startTransition -> runningState
+0.000: storyBoard initState -> startTransition -> runningState
+0.000: ActivateALKSControllerStory initState -> startTransition -> runningState
+0.000: ActivateALKSControllerAct initState -> initToStandbyTransition -> standbyState
+0.000: CutInStory initState -> startTransition -> runningState
+0.000: CutInAct initState -> initToStandbyTransition -> standbyState
+0.000: Trigger /------------------------------------------------
+0.000: ActivateALKSControllerActCondition == true, 0.0000 >= 0.0000 edge: none
+0.000: Trigger  ------------------------------------------------/
+0.000: ActivateALKSControllerAct standbyState -> startTransition -> runningState
+0.000: ActivateALKSControllerManeuverGroup initState -> startTransition -> runningState
+0.000: ActivateALKSControllerManeuver initState -> startTransition -> runningState
+0.000: ActivateALKSControllerEvent initState -> initToStandbyTransition -> standbyState
+0.000: Trigger /------------------------------------------------
+0.000: CutInActStart == true, 0.0000 >= 0.0000 edge: none
+0.000: Trigger  ------------------------------------------------/
+0.000: CutInAct standbyState -> startTransition -> runningState
+0.000: CutInManeuverGroup initState -> startTransition -> runningState
+0.000: CutInManeuver initState -> startTransition -> runningState
+0.000: CutInEvent initState -> initToStandbyTransition -> standbyState
+0.000: Init Ego TeleportAction runningState -> endTransition -> completeState
+0.000: Init Ego LongitudinalAction runningState -> endTransition -> completeState
+0.000: Init CutInVehicle TeleportAction runningState -> endTransition -> completeState
+0.000: Init CutInVehicle LongitudinalAction runningState -> endTransition -> completeState
+Closing
