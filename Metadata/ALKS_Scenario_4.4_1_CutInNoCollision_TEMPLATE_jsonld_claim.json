@@ -1,0 +1,165 @@
+{
+  "@context": {
+    "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+    "general": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/general/",
+    "scenario": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/scenario/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "georeference": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/georeference/"
+  },
+  "@id": "did:OSC-ALKS-scenarios:ALKS_Scenario_4.4_1_CutInNoCollision_TEMPLATE",
+  "@type": "scenario:scenario",
+  "scenario:general": {
+    "@type": "scenario:General",
+    "scenario:type": "Logical",
+    "scenario:timeDate": {
+      "@value": "2021-07-09T10:00:45",
+      "@type": "xsd:dateTime"
+    },
+    "scenario:usedStandardFunctions": {
+      "@value": "TeleportAction, LongitudinalAction, ControllerAction, LaneChangeAction, SpeedAction",
+      "@type": "xsd:string"
+    },
+    "scenario:aim": {
+      "@value": "Test the reaction of an ALKS system with regards to a cut-in maneuver.",
+      "@type": "xsd:string"
+    }
+  },
+  "scenario:participants": {
+    "@type": "scenario:Participants",
+    "scenario:numberTrafficObjects": {
+      "@value": "2",
+      "@type": "xsd:unsignedInt"
+    },
+    "scenario:temporaryTrafficObjects": {
+      "@value": "0",
+      "@type": "xsd:unsignedInt"
+    },
+    "scenario:permanentTrafficObjects": {
+      "@value": "2",
+      "@type": "xsd:unsignedInt"
+    },
+    "scenario:movementDescription": {
+      "@value": "LaneChangeAction",
+      "@type": "xsd:string"
+    },
+    "scenario:controllers": {
+      "@value": "ALKSController",
+      "@type": "xsd:string"
+    }
+  },
+  "scenario:traffic": {
+    "@type": "scenario:Traffic"
+  },
+  "scenario:structural": {
+    "@type": "scenario:Structural",
+    "scenario:catalogs": [
+      {
+        "@type": "scenario:Link"
+      },
+      {
+        "@type": "scenario:Link"
+      },
+      {
+        "@type": "scenario:Link"
+      },
+      {
+        "@type": "scenario:Link"
+      },
+      {
+        "@type": "scenario:Link",
+        "scenario:url": {
+          "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Vehicles/VehicleCatalog.xosc",
+          "@type": "xsd:anyURI"
+        },
+        "scenario:type": "Document"
+      },
+      {
+        "@type": "scenario:Link",
+        "scenario:url": {
+          "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Pedestrians/PedestrianCatalog.xosc",
+          "@type": "xsd:anyURI"
+        },
+        "scenario:type": "Document"
+      },
+      {
+        "@type": "scenario:Link",
+        "scenario:url": {
+          "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/MiscObjects/MiscObjectCatalog.xosc",
+          "@type": "xsd:anyURI"
+        },
+        "scenario:type": "Document"
+      },
+      {
+        "@type": "scenario:Link",
+        "scenario:url": {
+          "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Controllers/ControllerCatalog.xosc",
+          "@type": "xsd:anyURI"
+        },
+        "scenario:type": "Document"
+      }
+    ],
+    "": {
+      "@type": "scenario:Link"
+    },
+    "scenario:trafficSpace": [
+      {
+        "@type": "scenario:Link",
+        "scenario:url": {
+          "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Scenarios/ALKS_Road_straight.xodr",
+          "@type": "xsd:anyURI"
+        },
+        "scenario:type": "Document"
+      },
+      {
+        "@type": "scenario:Link"
+      }
+    ]
+  },
+  "scenario:format": {
+    "@type": "scenario:Format",
+    "scenario:type": "ASAM OpenSCENARIO",
+    "scenario:version": {
+      "@value": "1.1",
+      "@type": "xsd:string"
+    }
+  },
+  "scenario:source": {
+    "@type": "scenario:DataSourceShape"
+  },
+  "scenario:trafficSpace": {
+    "@type": "scenario:Link",
+    "scenario:url": {
+      "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Scenarios/ALKS_Road_straight.xodr",
+      "@type": "xsd:anyURI"
+    },
+    "scenario:type": "Document"
+  },
+  "scenario:catalogs": [
+    {
+      "@type": "scenario:Link",
+      "scenario:url": {
+        "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Vehicles/VehicleCatalog.xosc",
+        "@type": "xsd:anyURI"
+      },
+      "scenario:type": "Document"
+    },
+    {
+      "@type": "scenario:Link",
+      "scenario:url": {
+        "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Pedestrians/PedestrianCatalog.xosc",
+        "@type": "xsd:anyURI"
+      },
+      "scenario:type": "Document"
+    },
+    {
+      "@type": "scenario:Link",
+      "scenario:url": {
+        "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/MiscObjects/MiscObjectCatalog.xosc",
+        "@type": "xsd:anyURI"
+      },
+      "scenario:type": "Document"
+    }
+  ]
+}
