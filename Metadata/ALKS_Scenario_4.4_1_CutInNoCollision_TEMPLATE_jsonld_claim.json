@@ -10,9 +10,9 @@
   },
   "@id": "did:web:registry.gaia-x.eu:scenario:jvf7XGp2PDnDFt36AlVhYnahHUxwsY5p3Z4J",
   "@type": "scenario:scenario",
-  "scenario:general": {
-    "@type": "scenario:General",
-    "scenario:type": "Logical",
+  "scenario:common": {
+    "@type": "scenario:Common",
+    "scenario:abstractionLevel": "Logical",
     "scenario:timeDate": {
       "@value": "2021-07-09T10:00:00",
       "@type": "xsd:dateTime"
@@ -26,8 +26,8 @@
       "@type": "xsd:string"
     }
   },
-  "scenario:participants": {
-    "@type": "scenario:Participants",
+  "scenario:traffiCParticipants": {
+    "@type": "scenario:TrafficParticipants",
     "scenario:numberTrafficObjects": {
       "@value": "2",
       "@type": "xsd:unsignedInt"
@@ -140,7 +140,7 @@
   },
   "scenario:format": {
     "@type": "scenario:Format",
-    "scenario:type": "ASAM OpenSCENARIO",
+    "scenario:dataFormat": "ASAM OpenSCENARIO",
     "scenario:version": {
       "@value": "1.1",
       "@type": "xsd:string"
