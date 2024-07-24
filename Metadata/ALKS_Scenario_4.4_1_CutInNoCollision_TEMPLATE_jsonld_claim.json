@@ -9,7 +9,94 @@
     "georeference": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/georeference/"
   },
   "@id": "did:web:registry.gaia-x.eu:scenario:jvf7XGp2PDnDFt36AlVhYnahHUxwsY5p3Z4J",
-  "@type": "scenario:scenario",
+  "@type": "scenario:scenario",  
+  "scenario:general": {
+    "@type": "general:General",
+	"general:description": {
+      "@type": "general:Description",
+      "gx:name": {
+        "@value": "ALKS Scenario 4.4 1 Cut-In No Collision",
+        "@type": "xsd:string"
+      },
+      "gx:description": {
+        "@value": "An ALKS Scenario for testing the ALKS Cut-In reaction ability.",
+        "@type": "xsd:string"
+      }
+    },
+	"general:data": {
+      "@type": "general:Data",
+      "general:size": {
+        "@value": "1",
+        "@type": "xsd:float"
+      },
+      "general:contractId": {
+        "@value": "123465798",
+        "@type": "xsd:string"
+      },
+      "general:recordingTime": {
+        "@value": "2020-05-26T12:00:00",
+        "@type": "xsd:dateTime"
+      }
+    },
+    "general:links": {
+      "@type": "general:Links",
+      "general:data": {
+        "@type": "general:Link",
+        "general:url": {
+          "@value": "https://github.com/GAIA-X4PLC-AAD/scenario-asset-example/tree/main/data/scenario_data/ALKS_Scenario_4.4_1_CutInNoCollision_TEMPLATE.xosc",
+          "@type": "xsd:anyURI"
+        },
+        "general:type": "Asset"
+      },
+      "general:media": [
+	    {
+          "@type": "general:Link",
+          "general:url": {
+            "@value": "https://github.com/GAIA-X4PLC-AAD/hd-map-asset-example/blob/main/LICENSE",
+            "@type": "xsd:anyURI"
+          },
+          "general:type": "Document"
+		}
+      ]
+    },	
+	"general:bundleData": {
+      "@type": "general:BundleData",
+      "general:requiredData": {
+        "@type": "general:Link",
+        "general:url": {
+          "@value": "https://github.com/GAIA-X4PLC-AAD/hd-map-asset-example/blob/main/data/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_ODR_offset.xodr",
+          "@type": "xsd:anyURI"
+        },
+        "general:type": "Asset"
+      }, 	  
+	  "general:relatedData": {
+        "@type": "general:Link",
+        "general:url": {
+          "@value": "https://github.com/GAIA-X4PLC-AAD/environment-model-asset-example/tree//blob/main/data/scenario_data/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_3DModel.opt.osgb",
+          "@type": "xsd:anyURI"
+        },
+        "general:type": "Asset"
+      } 
+    },
+	"general:DataResource": {
+      "@type": "gx:DataResource",
+      "gx:exposedThrough": {
+        "@id": "https://github.com/GAIA-X4PLC-AAD/scenario-asset-example/tree/main"
+      },
+      "gx:expirationDateTime": {
+        "@value": "2099-12-31T23:59:59",
+        "@type": "xsd:dateTime"
+      },
+      "gx:containsPII": false,
+      "gx:producedBy": {
+        "@id": "https://github.com/asam-oss/OSC-ALKS-scenarios"
+      },
+      "gx:policy": {
+        "@value": "MPL-2.0",
+        "@type": "xsd:string"
+      }
+    }
+  },
   "scenario:common": {
     "@type": "scenario:Common",
     "scenario:abstractionLevel": "Logical",
@@ -26,7 +113,7 @@
       "@type": "xsd:string"
     }
   },
-  "scenario:traffiCParticipants": {
+  "scenario:trafficParticipants": {
     "@type": "scenario:TrafficParticipants",
     "scenario:numberTrafficObjects": {
       "@value": "2",
@@ -49,6 +136,13 @@
       "@type": "xsd:string"
     }
   },
+  "scenario:environmental": {
+    "@type": "scenario:Environmental",
+    "scenario:sunAzimuth": {
+      "@value": "3.1415",
+      "@type": "xsd:float"
+    }
+  },
   "scenario:traffic": {
     "@type": "scenario:Traffic"
   },
@@ -56,86 +150,45 @@
     "@type": "scenario:Structural",
     "scenario:catalogs": [
       {
-        "@type": "scenario:Link",
-        "scenario:url": {
+        "@type": "general:Link",
+        "general:url": {
           "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Vehicles/VehicleCatalog.xosc",
           "@type": "xsd:anyURI"
         },
-        "scenario:type": "Document"
+        "general:type": "Document"
       },
       {
-        "@type": "scenario:Link",
-        "scenario:url": {
+        "@type": "general:Link",
+        "general:url": {
           "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Pedestrians/PedestrianCatalog.xosc",
           "@type": "xsd:anyURI"
         },
-        "scenario:type": "Document"
+        "general:type": "Document"
       },
       {
-        "@type": "scenario:Link",
-        "scenario:url": {
+        "@type": "general:Link",
+        "general:url": {
           "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/MiscObjects/MiscObjectCatalog.xosc",
           "@type": "xsd:anyURI"
         },
-        "scenario:type": "Document"
+        "general:type": "Document"
       },
       {
-        "@type": "scenario:Link",
-        "scenario:url": {
+        "@type": "general:Link",
+        "general:url": {
           "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Controllers/ControllerCatalog.xosc",
           "@type": "xsd:anyURI"
         },
-        "scenario:type": "Document"
+        "general:type": "Document"
       }
     ],
-    "": {
-      "@type": "scenario:Link"
-    },
     "scenario:trafficSpace": {
-      "@type": "scenario:Link",
-      "scenario:url": {
+      "@type": "general:Link",
+      "general:url": {
         "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Scenarios/ALKS_Road_straight.xodr",
         "@type": "xsd:anyURI"
       },
-      "scenario:type": "Document"
-    }
-  },
-  "general:general": {
-    "@type": "general:General",
-    "general:DataResource": {
-      "@type": "gx:DataResource",
-      "gx:exposedThrough": {
-        "@id": "https://github.com/GAIA-X4PLC-AAD/scenario-asset-example/tree/main"
-      },
-      "gx:expirationDateTime": {
-        "@value": "2099-12-31T23:59:59",
-        "@type": "xsd:dateTime"
-      },
-      "gx:containsPII": false,
-      "gx:producedBy": {
-        "@id": "https://github.com/asam-oss/OSC-ALKS-scenarios"
-      },
-      "gx:policy": {
-        "@value": "MPL-2.0",
-        "@type": "xsd:string"
-      },
-      "gx:name": {
-        "@value": "ALKS Scenario 4.4 1 Cut-In No Collision",
-        "@type": "xsd:string"
-      },
-      "gx:description": {
-        "@value": "An ALKS Scenario for testing the ALKS Cut-In reaction ability.",
-        "@type": "xsd:string"
-      }
-    },
-    "general:Links": {
-      "@type": "general:Links",
-      "general:data": {
-        "@type": "scenario:Link"
-      },
-      "general:media": {
-        "@type": "scenario:Link"
-      }
+      "general:type": "Document"
     }
   },
   "scenario:format": {
@@ -164,46 +217,38 @@
       }
     }
   },
-  "scenario:trafficSpace": {
-    "@type": "scenario:Link",
-    "scenario:url": {
-      "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Scenarios/ALKS_Road_straight.xodr",
-      "@type": "xsd:anyURI"
-    },
-    "scenario:type": "Document"
-  },
   "scenario:catalogs": [
     {
-      "@type": "scenario:Link",
-      "scenario:url": {
+      "@type": "general:Link",
+      "general:url": {
         "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Vehicles/VehicleCatalog.xosc",
         "@type": "xsd:anyURI"
       },
-      "scenario:type": "Document"
+      "general:type": "Asset"
     },
     {
-      "@type": "scenario:Link",
-      "scenario:url": {
+      "@type": "general:Link",
+      "general:url": {
         "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Pedestrians/PedestrianCatalog.xosc",
         "@type": "xsd:anyURI"
       },
-      "scenario:type": "Document"
+      "general:type": "Asset"
     },
     {
-      "@type": "scenario:Link",
-      "scenario:url": {
+      "@type": "general:Link",
+      "general:url": {
         "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/MiscObjects/MiscObjectCatalog.xosc",
         "@type": "xsd:anyURI"
       },
-      "scenario:type": "Document"
+      "general:type": "Asset"
     },
     {
-      "@type": "scenario:Link",
-      "scenario:url": {
+      "@type": "general:Link",
+      "general:url": {
         "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Controllers/ControllerCatalog.xosc",
         "@type": "xsd:anyURI"
       },
-      "scenario:type": "Document"
+      "general:type": "Asset"
     }
   ]
 }
