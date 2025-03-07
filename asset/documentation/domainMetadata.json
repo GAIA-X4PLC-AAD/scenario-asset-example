@@ -1,0 +1,171 @@
+{
+  "@context": {
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "scenario": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/scenario/",
+    "georeference": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/georeference/",
+    "general": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/general/",
+    "manifest": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/manifest/",
+    "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+  },
+  "@id": "did:web:envited.register.market:scenario:None",
+  "@type": "scenario:Scenario",
+  "scenario:general": {
+    "@type": "general:General",
+    "general:description": {
+      "@type": "general:Description",
+      "general:name": {
+        "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen",
+        "@type": "xsd:string"
+      },
+      "general:description": {
+        "@value": "ALKS Scenario 4.4_1 CutInNoCollision Template",
+        "@type": "xsd:string"
+      }
+    },
+    "general:data": {
+      "@type": "general:Data",
+      "general:size": {
+        "@value": 0.0,
+        "@type": "xsd:float"
+      },
+      "general:recordingTime": {
+        "@value": "2021-07-09T10:00:00",
+        "@type": "xsd:dateTime"
+      }
+    }
+  },
+  "scenario:format": {
+    "@type": "scenario:Format",
+    "scenario:formatType": {
+      "@value": "ASAM OpenSCENARIO"
+    },
+    "scenario:version": {
+      "@value": "1.1",
+      "@type": "xsd:string"
+    }
+  },
+  "scenario:content": {
+    "@type": "scenario:Content",
+    "scenario:usedStandardFunctions": {
+      "@value": "ConstraintGroup, Init, LanePosition, Center, Performance, SpeedActionDynamics, Storyboard, PrivateAction, LateralAction, StoryboardElementStateCondition, LongitudinalAction, FileHeader, RelativeLanePosition, ScenarioObject, Condition, Vehicle, BoundingBox, LaneChangeAction, ManeuverGroup, ParameterDeclarations, RoadNetwork, Properties, SimulationTimeCondition, TeleportAction, EntityCondition, Axles, Actors, RelativeDistanceCondition, RearAxle, Act, Property, LaneChangeActionDynamics, StopTrigger, SceneGraphFile, ObjectController, StartTrigger, TriggeringEntities, ControllerAction, ByEntityCondition, ParameterDeclaration, Position, ByValueCondition, CatalogLocations, Actions, SpeedActionTarget, Maneuver, Event, Dimensions, ValueConstraint, FrontAxle, SpeedAction, Action, Entities, ConditionGroup, RelativeTargetLane, LogicFile, Controller, Story, EntityRef, RelativeTargetSpeed, Private, ActivateControllerAction, AbsoluteTargetSpeed, LaneChangeTarget",
+      "@type": "xsd:string"
+    },
+    "scenario:environmentModels": [
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": {
+          "@value": "owner"
+        },
+        "manifest:type": {
+          "@value": "assetData"
+        },
+        "manifest:fileMetaData": {
+          "@type": "manifest:FileMetaData",
+          "manifest:uri": {
+            "@value": "./Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_3DModel.opt.osgb",
+            "@type": "xsd:anyURI"
+          },
+          "manifest:filename": {
+            "@value": "Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_3DModel.opt.osgb",
+            "@type": "xsd:string"
+          }
+        }
+      }
+    ],
+    "scenario:trafficSpace": {
+      "@type": "manifest:Link",
+      "manifest:accessRole": {
+        "@value": "owner"
+      },
+      "manifest:type": {
+        "@value": "assetData"
+      },
+      "manifest:fileMetaData": {
+        "@type": "manifest:FileMetaData",
+        "manifest:uri": {
+          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr",
+          "@type": "xsd:anyURI"
+        },
+        "manifest:filename": {
+          "@value": "TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr",
+          "@type": "xsd:string"
+        }
+      }
+    }
+  },
+  "scenario:quantity": {
+    "@type": "scenario:Quantity",
+    "scenario:numberTrafficObjects": {
+      "@value": "2",
+      "@type": "xsd:unsignedInt"
+    },
+    "scenario:controllers": [
+      "A",
+      "L",
+      "K",
+      "S",
+      "C",
+      "o",
+      "n",
+      "t",
+      "r",
+      "o",
+      "l",
+      "l",
+      "e",
+      "r"
+    ]
+  },
+  "scenario:quality": {
+    "@type": "scenario:Quality"
+  },
+  "scenario:dataSource": {
+    "@type": "scenario:DataSource"
+  },
+  "scenario:georeference": {
+    "@type": "georeference:Georeference",
+    "georeference:projectLocation": {
+      "@type": "georeference:ProjectLocation",
+      "georeference:boundingBox": {
+        "@type": "georeference:BoundingBox",
+        "georeference:xMin": {
+          "@value": 0.0,
+          "@type": "xsd:float"
+        },
+        "georeference:yMin": {
+          "@value": 0.0,
+          "@type": "xsd:float"
+        },
+        "georeference:xMax": {
+          "@value": 0.0,
+          "@type": "xsd:float"
+        },
+        "georeference:yMax": {
+          "@value": 0.0,
+          "@type": "xsd:float"
+        }
+      }
+    },
+    "georeference:geodeticReferenceSystem": {
+      "@type": "georeference:GeodeticReferenceSystem",
+      "georeference:origin": {
+        "@type": "georeference:LatLonCoordinate",
+        "georeference:lat": {
+          "@value": 0.0,
+          "@type": "xsd:float"
+        },
+        "georeference:lon": {
+          "@value": 0.0,
+          "@type": "xsd:float"
+        }
+      },
+      "georeference:coordinateSystemName": {
+        "@type": "xsd:string",
+        "@value": ""
+      }
+    }
+  }
+}

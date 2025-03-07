@@ -1,0 +1,210 @@
+{
+  "@context": {
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "manifest": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/manifest/",
+    "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+  },
+  "@id": "did:web:envited.register.market:manifest:None",
+  "@type": "manifest:Manifest",
+  "manifest:data": {
+    "@type": "manifest:Data",
+    "manifest:assetData": [
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": {
+          "@value": "owner"
+        },
+        "manifest:type": {
+          "@value": "assetData"
+        },
+        "manifest:fileMetaData": {
+          "@type": "manifest:FileMetaData",
+          "manifest:uri": {
+            "@value": "data/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.xosc",
+            "@type": "xsd:anyURI"
+          },
+          "manifest:fileSize": {
+            "@value": 13838,
+            "@type": "xsd:integer"
+          },
+          "manifest:filename": {
+            "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.xosc",
+            "@type": "xsd:string"
+          }
+        }
+      }
+    ],
+    "manifest:contentData": [
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": {
+          "@value": "publicUser"
+        },
+        "manifest:type": {
+          "@value": "documentation"
+        },
+        "manifest:fileMetaData": {
+          "@type": "manifest:FileMetaData",
+          "manifest:uri": {
+            "@value": "documentation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_readme.txt",
+            "@type": "xsd:anyURI"
+          },
+          "manifest:fileSize": {
+            "@value": 91,
+            "@type": "xsd:integer"
+          },
+          "manifest:filename": {
+            "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_readme.txt",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": {
+          "@value": "publicUser"
+        },
+        "manifest:type": {
+          "@value": "visualization"
+        },
+        "manifest:fileMetaData": {
+          "@type": "manifest:FileMetaData",
+          "manifest:uri": {
+            "@value": "metadata/domainMetadata.json",
+            "@type": "xsd:anyURI"
+          },
+          "manifest:fileSize": {
+            "@value": 5865,
+            "@type": "xsd:integer"
+          },
+          "manifest:filename": {
+            "@value": "domainMetadata.json",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": {
+          "@value": "publicUser"
+        },
+        "manifest:type": {
+          "@value": "visualization"
+        },
+        "manifest:fileMetaData": {
+          "@type": "manifest:FileMetaData",
+          "manifest:uri": {
+            "@value": "metadata/domainMetadata_updated.json",
+            "@type": "xsd:anyURI"
+          },
+          "manifest:fileSize": {
+            "@value": 5865,
+            "@type": "xsd:integer"
+          },
+          "manifest:filename": {
+            "@value": "domainMetadata_updated.json",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": {
+          "@value": "publicUser"
+        },
+        "manifest:type": {
+          "@value": "metadata"
+        },
+        "manifest:fileMetaData": {
+          "@type": "manifest:FileMetaData",
+          "manifest:uri": {
+            "@value": "validation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc.xqar",
+            "@type": "xsd:anyURI"
+          },
+          "manifest:fileSize": {
+            "@value": 7463,
+            "@type": "xsd:integer"
+          },
+          "manifest:filename": {
+            "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc.xqar",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": {
+          "@value": "publicUser"
+        },
+        "manifest:type": {
+          "@value": "documentation"
+        },
+        "manifest:fileMetaData": {
+          "@type": "manifest:FileMetaData",
+          "manifest:uri": {
+            "@value": "validation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc_QCReport.txt",
+            "@type": "xsd:anyURI"
+          },
+          "manifest:fileSize": {
+            "@value": 11570,
+            "@type": "xsd:integer"
+          },
+          "manifest:filename": {
+            "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc_QCReport.txt",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": {
+          "@value": "publicUser"
+        },
+        "manifest:type": {
+          "@value": "visualization"
+        },
+        "manifest:fileMetaData": {
+          "@type": "manifest:FileMetaData",
+          "manifest:uri": {
+            "@value": "visualization/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_impression-01.png",
+            "@type": "xsd:anyURI"
+          },
+          "manifest:fileSize": {
+            "@value": 2382216,
+            "@type": "xsd:integer"
+          },
+          "manifest:filename": {
+            "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_impression-01.png",
+            "@type": "xsd:string"
+          }
+        }
+      }
+    ]
+  },
+  "manifest:license": {
+    "@type": "manifest:License",
+    "manifest:spdxIdentifier": {
+      "@value": "MPL-2.0",
+      "@type": "xsd:string"
+    },
+    "manifest:licenseData": {
+      "@type": "manifest:Link",
+      "manifest:accessRole": {
+        "@value": "publicUser"
+      },
+      "manifest:type": {
+        "@value": "license"
+      },
+      "manifest:fileMetaData": {
+        "@type": "manifest:FileMetaData",
+        "manifest:uri": {
+          "@value": "https://www.mozilla.org/en-US/MPL/2.0/",
+          "@type": "xsd:anyURI"
+        }
+      }
+    }
+  }
+}
