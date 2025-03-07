@@ -50,8 +50,10 @@
       </ConstraintGroup>
     </ParameterDeclaration>
   </ParameterDeclarations>
+  <CatalogLocations>
+  </CatalogLocations>
   <RoadNetwork>
-    <LogicFile filepath="./TestfeldNiedersachsen_ALKS_ODR_sample_offset_test.xodr" />
+    <LogicFile filepath="./TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr" />
     <SceneGraphFile filepath="./Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_3DModel.opt.osgb"/>
   </RoadNetwork>
   <Entities>
