@@ -10,7 +10,7 @@
     "manifest": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/manifest/",
     "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
   },
-  "@id": "did:web:envited.register.market:scenario:None",
+  "@id": "did:web:registry.gaia-x.eu:scenario:jvf7XGp2PDnDFt36AlVhYnahHUxwsY5p3Z4J",
   "@type": "scenario:Scenario",
   "scenario:general": {
     "@type": "general:General",

@@ -7,7 +7,7 @@
     "manifest": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/manifest/",
     "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
   },
-  "@id": "did:web:envited.register.market:manifest:None",
+  "@id": "did:web:registry.gaia-x.eu:Manifest:ZNh6G-tHPpkpxJhNobhXVmauYxrfTAZdQy9L",
   "@type": "manifest:Manifest",
   "manifest:data": {
     "@type": "manifest:Data",
