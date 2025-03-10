@@ -21,7 +21,7 @@
         "@type": "xsd:string"
       },
       "general:description": {
-        "@value": "ALKS Scenario 4.4_1 CutInNoCollision Template",
+        "@value": "An ALKS Scenario for testing the ALKS Cut-In reaction ability.",
         "@type": "xsd:string"
       }
     },
@@ -53,6 +53,65 @@
       "@value": "ConstraintGroup, Init, LanePosition, Center, Performance, SpeedActionDynamics, Storyboard, PrivateAction, LateralAction, StoryboardElementStateCondition, LongitudinalAction, FileHeader, RelativeLanePosition, ScenarioObject, Condition, Vehicle, BoundingBox, LaneChangeAction, ManeuverGroup, ParameterDeclarations, RoadNetwork, Properties, SimulationTimeCondition, TeleportAction, EntityCondition, Axles, Actors, RelativeDistanceCondition, RearAxle, Act, Property, LaneChangeActionDynamics, StopTrigger, SceneGraphFile, ObjectController, StartTrigger, TriggeringEntities, ControllerAction, ByEntityCondition, ParameterDeclaration, Position, ByValueCondition, CatalogLocations, Actions, SpeedActionTarget, Maneuver, Event, Dimensions, ValueConstraint, FrontAxle, SpeedAction, Action, Entities, ConditionGroup, RelativeTargetLane, LogicFile, Controller, Story, EntityRef, RelativeTargetSpeed, Private, ActivateControllerAction, AbsoluteTargetSpeed, LaneChangeTarget",
       "@type": "xsd:string"
     },
+    "scenario:abstractionLevel": "Logical",
+    "scenario:timeDate": {
+      "@value": "2021-07-09T10:00:00",
+      "@type": "xsd:dateTime"
+    }, 
+    "scenario:aim": {
+      "@value": "Test the reaction of an ALKS system with regards to a cut-in maneuver.",
+      "@type": "xsd:string"
+    },       
+    "scenario:movementDescription": {
+      "@value": "LaneChangeAction",
+      "@type": "xsd:string"
+    },    
+    "scenario:catalogs": [
+      {
+        "@type": "manifest:Link",
+        "manifest:type": "assetData",
+        "manifest:accessRole": "owner",            
+        "manifest:fileMetaData": {
+            "manifest:uri": {
+                "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Vehicles/VehicleCatalog.xosc",
+                "@type": "xsd:anyURI"
+            }
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:type": "assetData",
+        "manifest:accessRole": "owner",            
+        "manifest:fileMetaData": {
+            "manifest:uri": {
+                "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Pedestrians/PedestrianCatalog.xosc",
+                "@type": "xsd:anyURI"
+            }
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:type": "assetData",
+        "manifest:accessRole": "owner",            
+        "manifest:fileMetaData": {
+            "manifest:uri": {
+                "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/MiscObjects/MiscObjectCatalog.xosc",
+                "@type": "xsd:anyURI"
+            }
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:type": "assetData",
+        "manifest:accessRole": "owner",            
+        "manifest:fileMetaData": {
+            "manifest:uri": {
+                "@value": "https://github.com/asam-oss/OSC-ALKS-scenarios/blob/master/Catalogs/Controllers/ControllerCatalog.xosc",
+                "@type": "xsd:anyURI"
+            }
+        }
+      }
+    ],    
     "scenario:environmentModels": [
       {
         "@type": "manifest:Link",
@@ -86,7 +145,7 @@
       "manifest:fileMetaData": {
         "@type": "manifest:FileMetaData",
         "manifest:uri": {
-          "@value": "./TestfeldNiedersachsen_ALKS_ODR_sample_offset.xodr",
+          "@value": "https://github.com/GAIA-X4PLC-AAD/hd-map-asset-example/blob/main/asset/data/TestfeldNiedersachsen_ALKS_ODR_sample.xodr",
           "@type": "xsd:anyURI"
         },
         "manifest:filename": {
@@ -103,20 +162,7 @@
       "@type": "xsd:unsignedInt"
     },
     "scenario:controllers": [
-      "A",
-      "L",
-      "K",
-      "S",
-      "C",
-      "o",
-      "n",
-      "t",
-      "r",
-      "o",
-      "l",
-      "l",
-      "e",
-      "r"
+      "ALKSController"
     ]
   },
   "scenario:quality": {
@@ -129,22 +175,38 @@
     "@type": "georeference:Georeference",
     "georeference:projectLocation": {
       "@type": "georeference:ProjectLocation",
+      "georeference:state": {
+        "@value": "DE-NI",
+        "@type": "xsd:string"
+      },
+      "georeference:city": {
+        "@value": "Koenigslutter am Elm",
+        "@type": "xsd:string"
+      },
+      "georeference:region": {
+        "@value": "Landkreis Helmstedt",
+        "@type": "xsd:string"
+      },
+      "georeference:country": {
+        "@value": "DE",
+        "@type": "xsd:string"
+      },
       "georeference:boundingBox": {
         "@type": "georeference:BoundingBox",
         "georeference:xMin": {
-          "@value": 0.0,
+          "@value": 10.720740862799195,
           "@type": "xsd:float"
         },
         "georeference:yMin": {
-          "@value": 0.0,
+          "@value": 52.29672229543727,
           "@type": "xsd:float"
         },
         "georeference:xMax": {
-          "@value": 0.0,
+          "@value": 10.730432209669724,
           "@type": "xsd:float"
         },
         "georeference:yMax": {
-          "@value": 0.0,
+          "@value": 52.31580272353997,
           "@type": "xsd:float"
         }
       }
@@ -154,17 +216,17 @@
       "georeference:origin": {
         "@type": "georeference:LatLonCoordinate",
         "georeference:lat": {
-          "@value": 0.0,
+          "@value": "52.275329463992996",
           "@type": "xsd:float"
         },
         "georeference:lon": {
-          "@value": 0.0,
+          "@value": "10.685571633942278",
           "@type": "xsd:float"
         }
       },
       "georeference:coordinateSystemName": {
-        "@type": "xsd:string",
-        "@value": ""
+        "@value": "tmerc",
+        "@type": "xsd:string"
       }
     }
   }
