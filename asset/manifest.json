@@ -23,11 +23,11 @@
         "manifest:fileMetaData": {
           "@type": "manifest:FileMetaData",
           "manifest:uri": {
-            "@value": "data/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.xosc",
+            "@value": "./data/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.xosc",
             "@type": "xsd:anyURI"
           },
           "manifest:fileSize": {
-            "@value": 13838,
+            "@value": "13838",
             "@type": "xsd:integer"
           },
           "manifest:filename": {
@@ -49,63 +49,15 @@
         "manifest:fileMetaData": {
           "@type": "manifest:FileMetaData",
           "manifest:uri": {
-            "@value": "documentation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_readme.txt",
+            "@value": "./documentation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_readme.txt",
             "@type": "xsd:anyURI"
           },
           "manifest:fileSize": {
-            "@value": 91,
+            "@value": "91",
             "@type": "xsd:integer"
           },
           "manifest:filename": {
             "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_readme.txt",
-            "@type": "xsd:string"
-          }
-        }
-      },
-      {
-        "@type": "manifest:Link",
-        "manifest:accessRole": {
-          "@value": "publicUser"
-        },
-        "manifest:type": {
-          "@value": "visualization"
-        },
-        "manifest:fileMetaData": {
-          "@type": "manifest:FileMetaData",
-          "manifest:uri": {
-            "@value": "metadata/domainMetadata.json",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:fileSize": {
-            "@value": 5865,
-            "@type": "xsd:integer"
-          },
-          "manifest:filename": {
-            "@value": "domainMetadata.json",
-            "@type": "xsd:string"
-          }
-        }
-      },
-      {
-        "@type": "manifest:Link",
-        "manifest:accessRole": {
-          "@value": "publicUser"
-        },
-        "manifest:type": {
-          "@value": "visualization"
-        },
-        "manifest:fileMetaData": {
-          "@type": "manifest:FileMetaData",
-          "manifest:uri": {
-            "@value": "metadata/domainMetadata_updated.json",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:fileSize": {
-            "@value": 5865,
-            "@type": "xsd:integer"
-          },
-          "manifest:filename": {
-            "@value": "domainMetadata_updated.json",
             "@type": "xsd:string"
           }
         }
@@ -121,11 +73,35 @@
         "manifest:fileMetaData": {
           "@type": "manifest:FileMetaData",
           "manifest:uri": {
-            "@value": "validation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc.xqar",
+            "@value": "./metadata/domainMetadata.json",
             "@type": "xsd:anyURI"
           },
           "manifest:fileSize": {
-            "@value": 7463,
+            "@value": "5865",
+            "@type": "xsd:integer"
+          },
+          "manifest:filename": {
+            "@value": "domainMetadata.json",
+            "@type": "xsd:string"
+          }
+        }
+      },
+      {
+        "@type": "manifest:Link",
+        "manifest:accessRole": {
+          "@value": "publicUser"
+        },
+        "manifest:type": {
+          "@value": "validation"
+        },
+        "manifest:fileMetaData": {
+          "@type": "manifest:FileMetaData",
+          "manifest:uri": {
+            "@value": "./validation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc.xqar",
+            "@type": "xsd:anyURI"
+          },
+          "manifest:fileSize": {
+            "@value": "7463",
             "@type": "xsd:integer"
           },
           "manifest:filename": {
@@ -140,16 +116,16 @@
           "@value": "publicUser"
         },
         "manifest:type": {
-          "@value": "documentation"
+          "@value": "validation"
         },
         "manifest:fileMetaData": {
           "@type": "manifest:FileMetaData",
           "manifest:uri": {
-            "@value": "validation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc_QCReport.txt",
+            "@value": "./validation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc_QCReport.txt",
             "@type": "xsd:anyURI"
           },
           "manifest:fileSize": {
-            "@value": 11570,
+            "@value": "11570",
             "@type": "xsd:integer"
           },
           "manifest:filename": {
@@ -169,11 +145,11 @@
         "manifest:fileMetaData": {
           "@type": "manifest:FileMetaData",
           "manifest:uri": {
-            "@value": "visualization/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_impression-01.png",
+            "@value": "./visualization/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_impression-01.png",
             "@type": "xsd:anyURI"
           },
           "manifest:fileSize": {
-            "@value": 2382216,
+            "@value": "2382216",
             "@type": "xsd:integer"
           },
           "manifest:filename": {

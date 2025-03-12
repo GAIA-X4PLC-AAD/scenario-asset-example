@@ -1,6 +1,6 @@
 # ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen
 
-ALKS Scenario 4.4_1 CutInNoCollision Template
+An ALKS Scenario for testing the ALKS Cut-In reaction ability.
 
 ## Digital Assets
 

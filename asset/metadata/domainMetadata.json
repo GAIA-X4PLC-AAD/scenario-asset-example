@@ -28,7 +28,7 @@
     "general:data": {
       "@type": "general:Data",
       "general:size": {
-        "@value": 0.0,
+        "@value": "0.0",
         "@type": "xsd:float"
       },
       "general:recordingTime": {
@@ -194,19 +194,19 @@
       "georeference:boundingBox": {
         "@type": "georeference:BoundingBox",
         "georeference:xMin": {
-          "@value": 10.720740862799195,
+          "@value": "10.720740862799195",
           "@type": "xsd:float"
         },
         "georeference:yMin": {
-          "@value": 52.29672229543727,
+          "@value": "52.29672229543727",
           "@type": "xsd:float"
         },
         "georeference:xMax": {
-          "@value": 10.730432209669724,
+          "@value": "10.730432209669724",
           "@type": "xsd:float"
         },
         "georeference:yMax": {
-          "@value": 52.31580272353997,
+          "@value": "52.31580272353997",
           "@type": "xsd:float"
         }
       }
