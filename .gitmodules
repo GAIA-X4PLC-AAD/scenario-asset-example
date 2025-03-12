@@ -1,7 +1,3 @@
-[submodule "submodules/OSC-ALKS-scenarios"]
-	path = submodules/OSC-ALKS-scenarios
-	url = git@github.com:asam-oss/OSC-ALKS-scenarios.git
-[submodule "submodules/map-and-scenario-data"]
-	path = submodules/map-and-scenario-data
-	url = git@github.com:GAIA-X4PLC-AAD/map-and-scenario-data.git
-	branch = AlksScenariosMetadataIvi
+[submodule "shacles-and-ontologies/ontology-management-base"]
+	path = ontology-management-base
+	url = https://github.com/GAIA-X4PLC-AAD/ontology-management-base.git

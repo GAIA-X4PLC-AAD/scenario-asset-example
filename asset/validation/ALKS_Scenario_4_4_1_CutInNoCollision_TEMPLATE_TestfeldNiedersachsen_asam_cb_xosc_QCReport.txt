@@ -1,0 +1,218 @@
+====================================================================================================
+QC4OpenX - Pooled results
+====================================================================================================
+
+InputFile: ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.xosc
+
+====================================================================================================
+    CheckerBundle:  xoscBundle
+    Build date:     2025-03-07
+    Build version:  v1.0.0-rc.1
+    Description:    OpenScenario checker bundle
+    Summary:        17 checker(s) are executed. 5 checker(s) are completed. 12 checker(s) are skipped. 0 checker(s) have internal error and 0 checker(s) do not contain status.
+    Parameters:     InputFile = E:/Test/uploads/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.xosc
+                    resultFile = E:/Test/output/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen/validation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc.xqar
+
+
+    Checker:        check_asam_xosc_xml_valid_xml_document
+    Description:    The given file to check must be a valid XML document.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.0.0:xml.valid_xml_document
+
+    Checker:        check_asam_xosc_xml_root_tag_is_openscenario
+    Description:    The root element of a valid XML document must be OpenSCENARIO.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.0.0:xml.root_tag_is_openscenario
+
+    Checker:        check_asam_xosc_xml_fileheader_is_present
+    Description:    Below the root element a tag with FileHeader must be defined.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.0.0:xml.fileheader_is_present
+
+    Checker:        check_asam_xosc_xml_version_is_defined
+    Description:    The FileHeader tag must have the attributes revMajor and revMinor and of type unsignedShort.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.0.0:xml.version_is_defined
+
+    Checker:        check_asam_xosc_xml_valid_schema
+    Description:    Input xml file must be valid according to the schema.
+    Status:         completed
+    Summary:        0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.0.0:xml.valid_schema
+
+    Checker:        check_asam_xosc_reference_control_uniquely_resolvable_entity_references
+    Description:    Reference names must be unique
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:reference_control.uniquely_resolvable_entity_references
+
+    Checker:        check_asam_xosc_reference_control_resolvable_signal_id_in_traffic_signal_state_action
+    Description:    TrafficSignalStateAction:name -> Signal ID must exist within the given road network.
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:reference_control.resolvable_signal_id_in_traffic_signal_state_action
+
+    Checker:        check_asam_xosc_reference_control_resolvable_traffic_signal_controller_by_traffic_signal_controller_ref
+    Description:    The trafficSignalController according to the trafficSignalControllerRef property must exist within the scenarios RoadNetwork definition.
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:reference_control.resolvable_traffic_signal_controller_by_traffic_signal_controller_ref
+
+    Checker:        check_asam_xosc_reference_control_valid_actor_reference_in_private_actions
+    Description:    In a ManeuverGroup, if the defined action is a private action an actor must be defined.
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:reference_control.valid_actor_reference_in_private_actions
+
+    Checker:        check_asam_xosc_reference_control_resolvable_entity_references
+    Description:    A named reference in the EntityRef must be resolvable.
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:reference_control.resolvable_entity_references
+
+    Checker:        check_asam_xosc_reference_control_resolvable_variable_reference
+    Description:    The VariableDeclaration according to the variableRef property must exist within the ScenarioDefinition.
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:reference_control.resolvable_variable_reference
+
+    Checker:        check_asam_xosc_reference_control_resolvable_storyboard_element_reference
+    Description:    The attribute storyboardElementRef shall point to an existing element of the corresponding type and shall be uniquely resolvable.
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:reference_control.resolvable_storyboard_element_reference
+
+    Checker:        check_asam_xosc_reference_control_unique_element_names_on_same_level
+    Description:    Element names at each level shall be unique at that level.
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:reference_control.unique_element_names_on_same_level
+
+    Checker:        check_asam_xosc_parameters_valid_parameter_declaration_in_catalogs
+    Description:    All parameters used within a catalog shall be declared within their ParameterDeclaration in the same catalog, which sets a default value for each parameter.
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:parameters.valid_parameter_declaration_in_catalogs
+
+    Checker:        check_asam_xosc_data_type_allowed_operators
+    Description:    Expressions in OpenSCENARIO must only use the allowed operands.
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:data_type.allowed_operators
+
+    Checker:        check_asam_xosc_data_type_non_negative_transition_time_in_light_state_action
+    Description:    Expressions in OpenSCENARIO must only use the allowed operands.
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:data_type.non_negative_transition_time_in_light_state_action
+
+    Checker:        check_asam_xosc_positive_duration_in_phase
+    Description:    Expressions in OpenSCENARIO must only use the allowed operands.
+    Status:         skipped
+    Summary:        Version 1.1.0 is lower than definition setting 1.2.0. Skip the check. 0 issue(s) are found.
+
+        Addressed Rules:        
+        - rule:         asam.net:xosc:1.2.0:data_type.positive_duration_in_phase
+====================================================================================================
+
+Rules report 
+
+
+Total number of addressed rules:   17
+	-> Addressed RuleUID: asam.net:xosc:1.0.0:xml.fileheader_is_present
+
+	-> Addressed RuleUID: asam.net:xosc:1.0.0:xml.root_tag_is_openscenario
+
+	-> Addressed RuleUID: asam.net:xosc:1.0.0:xml.valid_schema
+
+	-> Addressed RuleUID: asam.net:xosc:1.0.0:xml.valid_xml_document
+
+	-> Addressed RuleUID: asam.net:xosc:1.0.0:xml.version_is_defined
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:data_type.allowed_operators
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:data_type.non_negative_transition_time_in_light_state_action
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:data_type.positive_duration_in_phase
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:parameters.valid_parameter_declaration_in_catalogs
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:reference_control.resolvable_entity_references
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:reference_control.resolvable_signal_id_in_traffic_signal_state_action
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:reference_control.resolvable_storyboard_element_reference
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:reference_control.resolvable_traffic_signal_controller_by_traffic_signal_controller_ref
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:reference_control.resolvable_variable_reference
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:reference_control.unique_element_names_on_same_level
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:reference_control.uniquely_resolvable_entity_references
+
+	-> Addressed RuleUID: asam.net:xosc:1.2.0:reference_control.valid_actor_reference_in_private_actions
+
+Total number of rules with found issues:    0
+
+Rules for information:               0
+Rules with warning issues:            0
+Rules with error issues:              0
+====================================================================================================
+
+====================================================================================================
+
+Note
+
+Rule UID format:
+    <emanating-entity>:<standard>:x.y.z:rule_set.for_rules.rule_name
+
+where    
+    Emanating Entity: a domain name for the entity (organization or company) that declares the rule UID
+    Standard: a short string that represents the standard or the domain to which the rule is applied
+    Definition Setting: the version of the standard or the domain to which the rule appears or is applied for the first time
+    Rule Full Name: the full name of the rule, as dot separated, snake lower case string. 
+        The full name of a rule is composed by the rule set, a categorization for the rule, 
+        and the rule name, a unique string inside the categorization. 
+        The rule set can be nested (meaning that can be defined as an 
+        arbitrary sequence of dot separated names, while the name is the snake 
+        case string after the last dot of the full name)
+
+====================================================================================================
+
