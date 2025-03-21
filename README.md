@@ -18,6 +18,7 @@ sudo apt-get install python3-full
 python3 -m venv .venv/
 source .venv/bin/activate # On Windows use: source .venv/Scripts/activate
 python3 -m pip install -r ontology-management-base/requirements.txt
+pre-commit install
 # Example check
 python3 ontology-management-base/src/check_jsonld_against_shacl_schema.py asset/manifest_reference.json
 python3 ontology-management-base/src/check_jsonld_against_shacl_schema.py asset/metadata/scenario_instance.json
