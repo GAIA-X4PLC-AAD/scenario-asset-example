@@ -3,12 +3,15 @@
     "scenario": "https://ontologies.envited-x.net/scenario/v4/ontology#",
     "envited-x": "https://ontologies.envited-x.net/envited-x/v2/ontology#",
     "manifest": "https://ontologies.envited-x.net/manifest/v4/ontology#",
+    "georeference": "https://ontologies.envited-x.net/georeference/v3/ontology#",
+    "openlabel": "https://openlabel.asam.net/V1-0-0/ontologies/",
+    "environment-model": "https://ontologies.envited-x.net/environment-model/v4/ontology#" ,
+    "hdmap": "https://ontologies.envited-x.net/hdmap/v4/ontology#" ,
     "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
     "sh": "http://www.w3.org/ns/shacl#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "georeference": "https://ontologies.envited-x.net/georeference/v3/ontology#"
+    "skos": "http://www.w3.org/2004/02/skos/core#"
   },
   "@id": "did:web:registry.gaia-x.eu:scenario:jvf7XGp2PDnDFt36AlVhYnahHUxwsY5p3Z4J",
   "@type": "scenario:Scenario",
