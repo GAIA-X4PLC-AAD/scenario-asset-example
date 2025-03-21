@@ -4,7 +4,7 @@ An ALKS Scenario for testing the ALKS Cut-In reaction ability.
 
 ## Digital Assets
 
-This is a digital asset according to the ENVITED Ecosystem Specification [EVES-003](https://ascs-ev.github.io/EVES/EVES-003/eves-003.html) for the ENVITED-X Data Space. It can be used as a template for other dataspaces as well. It contains a fully described and consistent example of a digital asset including a **`manifest.json` - file** as content registry.
+This is a digital asset according to the ENVITED Ecosystem Specification [EVES-003](https://ascs-ev.github.io/EVES/EVES-003/eves-003.html) for the ENVITED-X Data Space. It can be used as a template for other dataspaces as well. It contains a fully described and consistent example of a digital asset including a **`manifest_referene.json` - file** as content registry.
 
 A complete **`digital asset`** in a specific domain includes the data itself and all necessary files for describing, evaluating, and visualizing the dataset.
 

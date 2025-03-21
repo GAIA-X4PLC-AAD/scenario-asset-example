@@ -13,6 +13,9 @@ All ENVITED X Dataspace assets are defined according to [EVES-003](https://ascs-
 If you want to use the validation scripts from 📁 `ontology-management-base/src` then you need to isntall the following dependencies:
 
 ```bash
+# clone and init submodules
+git clone --recurse-submodules https://github.com/GAIA-X4PLC-AAD/scenario-asset-example.git
+
 # On Windows use python instead of python3
 sudo apt-get install python3-full
 python3 -m venv .venv/

@@ -1,186 +1,463 @@
 {
   "@context": {
+    "scenario": "https://ontologies.envited-x.net/scenario/v4/ontology#",
+    "envited-x": "https://ontologies.envited-x.net/envited-x/v2/ontology#",
+    "manifest": "https://ontologies.envited-x.net/manifest/v4/ontology#",
+    "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
     "sh": "http://www.w3.org/ns/shacl#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "manifest": "https://github.com/GAIA-X4PLC-AAD/ontology-management-base/tree/main/manifest/",
-    "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+    "skos": "http://www.w3.org/2004/02/skos/core#"
   },
   "@id": "did:web:registry.gaia-x.eu:Manifest:ZNh6G-tHPpkpxJhNobhXVmauYxrfTAZdQy9L",
-  "@type": "manifest:Manifest",
-  "manifest:data": {
-    "@type": "manifest:Data",
-    "manifest:assetData": [
-      {
-        "@type": "manifest:Link",
-        "manifest:accessRole": {
-          "@value": "owner"
-        },
-        "manifest:type": {
-          "@value": "assetData"
-        },
-        "manifest:fileMetaData": {
-          "@type": "manifest:FileMetaData",
-          "manifest:uri": {
-            "@value": "./data/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.xosc",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:fileSize": {
-            "@value": "13838",
-            "@type": "xsd:integer"
-          },
-          "manifest:filename": {
-            "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.xosc",
-            "@type": "xsd:string"
-          }
-        }
-      }
-    ],
-    "manifest:contentData": [
-      {
-        "@type": "manifest:Link",
-        "manifest:accessRole": {
-          "@value": "publicUser"
-        },
-        "manifest:type": {
-          "@value": "documentation"
-        },
-        "manifest:fileMetaData": {
-          "@type": "manifest:FileMetaData",
-          "manifest:uri": {
-            "@value": "./documentation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_readme.txt",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:fileSize": {
-            "@value": "91",
-            "@type": "xsd:integer"
-          },
-          "manifest:filename": {
-            "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_readme.txt",
-            "@type": "xsd:string"
-          }
-        }
-      },
-      {
-        "@type": "manifest:Link",
-        "manifest:accessRole": {
-          "@value": "publicUser"
-        },
-        "manifest:type": {
-          "@value": "metadata"
-        },
-        "manifest:fileMetaData": {
-          "@type": "manifest:FileMetaData",
-          "manifest:uri": {
-            "@value": "./metadata/domainMetadata.json",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:fileSize": {
-            "@value": "5865",
-            "@type": "xsd:integer"
-          },
-          "manifest:filename": {
-            "@value": "domainMetadata.json",
-            "@type": "xsd:string"
-          }
-        }
-      },
-      {
-        "@type": "manifest:Link",
-        "manifest:accessRole": {
-          "@value": "publicUser"
-        },
-        "manifest:type": {
-          "@value": "validation"
-        },
-        "manifest:fileMetaData": {
-          "@type": "manifest:FileMetaData",
-          "manifest:uri": {
-            "@value": "./validation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc.xqar",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:fileSize": {
-            "@value": "7463",
-            "@type": "xsd:integer"
-          },
-          "manifest:filename": {
-            "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc.xqar",
-            "@type": "xsd:string"
-          }
-        }
-      },
-      {
-        "@type": "manifest:Link",
-        "manifest:accessRole": {
-          "@value": "publicUser"
-        },
-        "manifest:type": {
-          "@value": "validation"
-        },
-        "manifest:fileMetaData": {
-          "@type": "manifest:FileMetaData",
-          "manifest:uri": {
-            "@value": "./validation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc_QCReport.txt",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:fileSize": {
-            "@value": "11570",
-            "@type": "xsd:integer"
-          },
-          "manifest:filename": {
-            "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc_QCReport.txt",
-            "@type": "xsd:string"
-          }
-        }
-      },
-      {
-        "@type": "manifest:Link",
-        "manifest:accessRole": {
-          "@value": "publicUser"
-        },
-        "manifest:type": {
-          "@value": "visualization"
-        },
-        "manifest:fileMetaData": {
-          "@type": "manifest:FileMetaData",
-          "manifest:uri": {
-            "@value": "./visualization/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_impression-01.png",
-            "@type": "xsd:anyURI"
-          },
-          "manifest:fileSize": {
-            "@value": "2382216",
-            "@type": "xsd:integer"
-          },
-          "manifest:filename": {
-            "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_impression-01.png",
-            "@type": "xsd:string"
-          }
-        }
-      }
-    ]
+  "@type": "scenario:Manifest",
+  "rdf:type": {
+    "@id": "scenario:Manifest"
   },
-  "manifest:license": {
+  "manifest:hasManifestReference": {
+    "@type": "manifest:Link",
+    "manifest:hasAccessRole": {
+      "@type": "manifest:AccessRole",
+      "@id": "envited-x:isPublic"
+    },
+    "manifest:hasCategory": {
+      "@type": "manifest:Category",
+      "@id": "envited-x:isManifest"
+    },
+    "manifest:hasFileMetadata": {
+      "@type": "manifest:FileMetadata",
+      "manifest:filePath": {
+        "@value": "./manifest_instance.json",
+        "@type": "xsd:anyURI"
+      },
+      "manifest:mimeType": {
+        "@value": "application/ld+json",
+        "@type": "xsd:string"
+      }
+    }
+  },
+  "manifest:hasLicense": {
     "@type": "manifest:License",
-    "manifest:spdxIdentifier": {
-      "@value": "MPL-2.0",
-      "@type": "xsd:string"
+    "gx:license": {
+      "@value": "MPL-2.0"
     },
     "manifest:licenseData": {
       "@type": "manifest:Link",
-      "manifest:accessRole": {
-        "@value": "publicUser"
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isPublic"
       },
-      "manifest:type": {
-        "@value": "license"
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isLicense"
       },
-      "manifest:fileMetaData": {
-        "@type": "manifest:FileMetaData",
-        "manifest:uri": {
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
           "@value": "https://www.mozilla.org/en-US/MPL/2.0/",
           "@type": "xsd:anyURI"
+        },
+        "manifest:mimeType": {
+          "@value": "text/html",
+          "@type": "xsd:string"
         }
       }
     }
-  }
+  },
+  "manifest:hasReferencedArtifacts": [
+    {
+      "@type": "manifest:Link",
+      "manifest:iri": {
+        "@id": "did:web:registry.gaia-x.eu:HdMap:DjHgK5ErTBow1Ya3J05tW9l12skGWgZn6kA9"
+      },
+      "skos:note": {
+        "@value": "Referenced HD Map Simulation Asset from <https://github.com/GAIA-X4PLC-AAD/hd-map-asset-example>.",
+        "@type": "xsd:string"
+      },
+      "sh:conformsTo": [
+        {
+          "@id": "https://ontologies.envited-x.net/hdmap/v4/ontology"
+        },
+        {
+          "@id": "https://ontologies.envited-x.net/manifest/v4/ontology"
+        }
+      ],
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isPublic"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isReferencedSimulationData"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": "https://github.com/GAIA-X4PLC-AAD/hd-map-asset-example/releases/download/v0.2.1/TestfeldNiedersachsen_ALKS_ODR_sample.zip",
+          "@type": "xsd:anyURI"
+        },
+        "manifest:mimeType": {
+          "@value": "application/zip",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    {
+      "@type": "manifest:Link",
+      "manifest:iri": {
+        "@id": "did:web:registry.gaia-x.eu:environment-model:xwsY5p3Z4Jjvf7XGp2PDnDFt36AlVhYnahHU"
+      },
+      "skos:note": {
+        "@value": "Reference to Environment Model Simulation Asset from: <https://github.com/GAIA-X4PLC-AAD/environment-model-asset-example>.",
+        "@type": "xsd:string"
+      },
+      "sh:conformsTo": [
+        {
+          "@id": "https://ontologies.envited-x.net/environment-model/v4/ontology"
+        },
+        {
+          "@id": "https://ontologies.envited-x.net/manifest/v4/ontology"
+        }
+      ],
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isPublic"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isReferencedSimulationData"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": "https://github.com/GAIA-X4PLC-AAD/environment-model-asset-example/releases/download/v0.2.0/Gaia_X_Example_Asset_TestfeldNiedersachsen_ALKS_3DModel_opt_osgb.zip",
+          "@type": "xsd:anyURI"
+        },
+        "manifest:mimeType": {
+          "@value": "application/zip",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    {
+      "@type": "manifest:Link",
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isPublic"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isReferencedSimulationData"
+      },
+      "skos:note": {
+        "@value": "Reference to ALKS Vehicle Catalog from: <https://github.com/openMSL/sl-3-1-osc-alks-scenarios/releases/tag/v0.4.2>.",
+        "@type": "xsd:string"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": "https://github.com/openMSL/sl-3-1-osc-alks-scenarios/blob/master/logical_scenarios/concrete_scenarios/catalogs/vehicles/vehicle_catalog.xosc",
+          "@type": "xsd:anyURI"
+        },
+        "manifest:mimeType": {
+          "@value": "application/x-xosc",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    {
+      "@type": "manifest:Link",
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isPublic"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isReferencedSimulationData"
+      },
+      "skos:note": {
+        "@value": "Reference to ALKS Pedestrian Catalog from: <https://github.com/openMSL/sl-3-1-osc-alks-scenarios/releases/tag/v0.4.2>.",
+        "@type": "xsd:string"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": "https://github.com/openMSL/sl-3-1-osc-alks-scenarios/blob/master/logical_scenarios/concrete_scenarios/catalogs/pedestrians/pedestrian_catalog.xosc",
+          "@type": "xsd:anyURI"
+        },
+        "manifest:mimeType": {
+          "@value": "application/x-xosc",
+          "@type": "xsd:string"
+        }
+      }
+    }
+  ],
+  "manifest:hasArtifacts": [
+    {
+      "@type": "manifest:Link",
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isOwner"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isSimulationData"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": "./simulation-data/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.xosc",
+          "@type": "xsd:anyURI"
+        },
+        "manifest:mimeType": {
+          "@value": "application/x-xosc",
+          "@type": "xsd:string"
+        },
+        "manifest:fileSize": {
+          "@value": 13554,
+          "@type": "xsd:integer"
+        },
+        "manifest:filename": {
+          "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.xosc",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    {
+      "@type": "manifest:Link",
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isPublic"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isSimulationData"
+      },
+      "skos:note": {
+        "@value": "Reference to ALKS Controllers Catalog from: <https://github.com/openMSL/sl-3-1-osc-alks-scenarios/releases/tag/v0.4.2>.",
+        "@type": "xsd:string"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": ".simulation-data/controller_catalog.xosc",
+          "@type": "xsd:anyURI"
+        },
+        "manifest:mimeType": {
+          "@value": "application/x-xosc",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    {
+      "@type": "manifest:Link",
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isPublic"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isDocumentation"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": "ipfs://bafkreignzh2atcdc5az2ma4jkp5swc62lmtzbt5cedtpu4vqzguegde2qm",
+          "@type": "xsd:anyURI"
+        },
+        "manifest:cid": {
+          "@value": "bafkreignzh2atcdc5az2ma4jkp5swc62lmtzbt5cedtpu4vqzguegde2qm",
+          "@type": "xsd:string"
+        },
+        "manifest:mimeType": {
+          "@value": "text/markdown",
+          "@type": "xsd:string"
+        },
+        "manifest:fileSize": {
+          "@value": 5120,
+          "@type": "xsd:integer"
+        },
+        "manifest:filename": {
+          "@value": "README.md",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    {
+      "@type": "manifest:Link",
+      "manifest:iri": {
+      "@id": "did:web:registry.gaia-x.eu:scenario:jvf7XGp2PDnDFt36AlVhYnahHUxwsY5p3Z4J"
+      },
+      "skos:note": {
+        "@value": "The scenario_instance.json file that describes the full simulation asset.",
+        "@type": "xsd:string"
+      },
+      "sh:conformsTo": [
+        {
+          "@id": "https://ontologies.envited-x.net/envited-x/v2/ontology#"
+        },
+        {
+          "@id": "https://ontologies.envited-x.net/manifest/v4/ontology#"
+        },
+        {
+          "@id": "https://ontologies.envited-x.net/scenario/v4/ontology#"
+        },
+        {
+          "@id": "https://ontologies.envited-x.net/georeference/v3/ontology#"
+        },
+        {
+          "@id": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#"
+        }
+      ],
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isPublic"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isMetadata"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": "./metadata/scenario_instance.json",
+          "@type": "xsd:anyURI"
+        },
+        "manifest:mimeType": {
+          "@value": "application/ld+json",
+          "@type": "xsd:string"
+        },
+        "manifest:fileSize": {
+          "@value": 6838,
+          "@type": "xsd:integer"
+        },
+        "manifest:filename": {
+          "@value": "scenario_instance.json",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    {
+      "@type": "manifest:Link",
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isRegistered"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isValidationReport"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": "./validation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc.xqar",
+          "@type": "xsd:anyURI"
+        },
+        "manifest:mimeType": {
+          "@value": "application/x-xqar",
+          "@type": "xsd:string"
+        },
+        "manifest:fileSize": {
+          "@value": 7463,
+          "@type": "xsd:integer"
+        },
+        "manifest:filename": {
+          "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc.xqar",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    {
+      "@type": "manifest:Link",
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isRegistered"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isDocumentation"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": "./documentation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_readme.txt",
+          "@type": "xsd:anyURI"
+        }
+        ,
+        "manifest:mimeType": {
+          "@value": "text/plain",
+          "@type": "xsd:string"
+        },
+        "manifest:fileSize": {
+          "@value": 90,
+          "@type": "xsd:integer"
+        },
+        "manifest:filename": {
+          "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_readme.txt",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    {
+      "@type": "manifest:Link",
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isRegistered"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isValidationReport"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": "./validation/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc_QCReport.txt",
+          "@type": "xsd:anyURI"
+        }
+        ,
+        "manifest:mimeType": {
+          "@value": "text/plain",
+          "@type": "xsd:string"
+        },
+        "manifest:fileSize": {
+          "@value": 11570,
+          "@type": "xsd:integer"
+        },
+        "manifest:filename": {
+          "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_asam_cb_xosc_QCReport.txt",
+          "@type": "xsd:string"
+        }
+      }
+    },
+    {
+      "@type": "manifest:Link",
+      "manifest:hasAccessRole": {
+        "@type": "manifest:AccessRole",
+        "@id": "envited-x:isPublic"
+      },
+      "manifest:hasCategory": {
+        "@type": "manifest:Category",
+        "@id": "envited-x:isMedia"
+      },
+      "manifest:hasFileMetadata": {
+        "@type": "manifest:FileMetadata",
+        "manifest:filePath": {
+          "@value": "./visualization/ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_impression-01.png",
+          "@type": "xsd:anyURI"
+        },
+        "manifest:mimeType": {
+          "@value": "image/png",
+          "@type": "xsd:string"
+        },
+        "manifest:fileSize": {
+          "@value": 2382216,
+          "@type": "xsd:integer"
+        },
+        "manifest:filename": {
+          "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen_impression-01.png",
+          "@type": "xsd:string"
+        }
+      }
+    }
+  ]
 }
