@@ -1,0 +1,188 @@
+{
+  "@context": {
+    "scenario": "https://ontologies.envited-x.net/scenario/v4/ontology#",
+    "envited-x": "https://ontologies.envited-x.net/envited-x/v2/ontology#",
+    "manifest": "https://ontologies.envited-x.net/manifest/v4/ontology#",
+    "gx": "https://registry.lab.gaia-x.eu/development/api/trusted-shape-registry/v1/shapes/jsonld/trustframework#",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "georeference": "https://ontologies.envited-x.net/georeference/v3/ontology#"
+  },
+  "@id": "did:web:registry.gaia-x.eu:scenario:jvf7XGp2PDnDFt36AlVhYnahHUxwsY5p3Z4J",
+  "@type": "scenario:Scenario",
+  "scenario:hasDataResource": {
+    "@type": "envited-x:DataResource",
+    "gx:name": {
+      "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen",
+      "@type": "xsd:string"
+    },
+    "gx:description": {
+      "@value": "An ALKS Scenario for testing the ALKS Cut-In reaction ability.",
+      "@type": "xsd:string"
+    }
+  },
+  "scenario:hasDataResourceExtension": {
+    "@type": "scenario:DataResourceExtension",
+    "scenario:hasFormat": {
+      "@type": "scenario:Format",
+      "scenario:formatType": "ASAM OpenSCENARIO",
+      "scenario:version": {
+        "@value": "1.1",
+        "@type": "xsd:string"
+      }
+    },
+    "scenario:hasContent": {
+      "@type": "scenario:Content",
+      "scenario:abstractionLevel": "Logical",
+      "scenario:timeDate": {
+        "@value": "2021-07-09T10:00:00",
+        "@type": "xsd:dateTime"
+      },
+      "scenario:aim": {
+        "@value": "Test the reaction of an ALKS system with regards to a cut-in maneuver.",
+        "@type": "xsd:string"
+      },
+      "scenario:movementDescription": {
+        "@value": "LaneChangeAction",
+        "@type": "xsd:string"
+      },
+      "scenario:usedStandardFunctions": {
+        "@value": "ConstraintGroup, Init, LanePosition, Center, Performance, SpeedActionDynamics, Storyboard, PrivateAction, LateralAction, StoryboardElementStateCondition, LongitudinalAction, FileHeader, RelativeLanePosition, ScenarioObject, Condition, Vehicle, BoundingBox, LaneChangeAction, ManeuverGroup, ParameterDeclarations, RoadNetwork, Properties, SimulationTimeCondition, TeleportAction, EntityCondition, Axles, Actors, RelativeDistanceCondition, RearAxle, Act, Property, LaneChangeActionDynamics, StopTrigger, SceneGraphFile, ObjectController, StartTrigger, TriggeringEntities, ControllerAction, ByEntityCondition, ParameterDeclaration, Position, ByValueCondition, CatalogLocations, Actions, SpeedActionTarget, Maneuver, Event, Dimensions, ValueConstraint, FrontAxle, SpeedAction, Action, Entities, ConditionGroup, RelativeTargetLane, LogicFile, Controller, Story, EntityRef, RelativeTargetSpeed, Private, ActivateControllerAction, AbsoluteTargetSpeed, LaneChangeTarget",
+        "@type": "xsd:string"
+      }
+    },
+    "scenario:hasQuantity": {
+      "@type": "scenario:Quantity",
+      "scenario:numberTrafficObjects": {
+        "@value": 2,
+        "@type": "xsd:unsignedInt"
+      },
+      "scenario:controllers": [
+        "ALKSController"
+      ]
+    },
+    "scenario:hasQuality": {
+      "@type": "scenario:Quality"
+    },
+    "scenario:hasDataSource": {
+      "@type": "scenario:DataSource"
+    },
+    "scenario:hasGeoreference": {
+      "@type": "georeference:Georeference",
+      "georeference:hasProjectLocation": {
+        "@type": "georeference:ProjectLocation",
+        "georeference:country": {
+          "@value": "DE",
+          "@type": "xsd:string"
+        },
+        "georeference:state": {
+          "@value": "DE-NI",
+          "@type": "xsd:string"
+        },
+        "georeference:region": {
+          "@value": "Landkreis Helmstedt",
+          "@type": "xsd:string"
+        },
+        "georeference:city": {
+          "@value": "Koenigslutter am Elm",
+          "@type": "xsd:string"
+        },
+        "georeference:relationOrArea": {
+          "@value": "A 39",
+          "@type": "xsd:string"
+        },
+        "georeference:hasBoundingBox": {
+          "@type": "georeference:BoundingBox",
+          "georeference:xMin": {
+            "@value": 10.720740862799195,
+            "@type": "xsd:float"
+          },
+          "georeference:yMin": {
+            "@value": 52.29672229543727,
+            "@type": "xsd:float"
+          },
+          "georeference:xMax": {
+            "@value": 10.730432209669724,
+            "@type": "xsd:float"
+          },
+          "georeference:yMax": {
+            "@value": 52.31580272353997,
+            "@type": "xsd:float"
+          }
+        }
+      },
+      "georeference:hasGeodeticReferenceSystem": {
+        "@type": "georeference:GeodeticReferenceSystem",
+        "georeference:codeEPSG": {
+          "@value": 32632,
+          "@type": "xsd:int"
+        },
+        "georeference:hasOrigin": {
+          "@type": "georeference:LatLonCoordinate",
+          "georeference:lat": {
+            "@value": 52.275329463992996,
+            "@type": "xsd:float"
+          },
+          "georeference:lon": {
+            "@value": 10.685571633942278,
+            "@type": "xsd:float"
+          }
+        },
+        "georeference:hasViewPoint": {
+          "@type": "georeference:LatLonCoordinate",
+          "georeference:lat": {
+            "@value": 52.30626250948862,
+            "@type": "xsd:float"
+          },
+          "georeference:lon": {
+            "@value": 10.72558653623446,
+            "@type": "xsd:float"
+          }
+        },
+        "georeference:heightSystem": "Ellipsoidal height"
+      }
+    }
+  },
+  "scenario:hasManifest": {
+    "@type": "manifest:Link",
+    "manifest:iri": {
+      "@id": "did:web:registry.gaia-x.eu:Manifest:Rp5Ny9lS8DcK3hB2uQ0fTm7jW4vXz1YgRkE6"
+    },
+    "skos:note": {
+      "@value": "Ensure that 'manifest_reference.json' contains all required categories: simulationData, documentation, metadata, media.",
+      "@type": "xsd:string"
+    },
+    "sh:conformsTo": [
+      {
+        "@id": "https://ontologies.envited-x.net/envited-x/v2/ontology#"
+      },
+      {
+        "@id": "https://ontologies.envited-x.net/manifest/v4/ontology#"
+      },
+      {
+        "@id": "https://ontologies.envited-x.net/scenario/v4/ontology#"
+      }
+    ],
+    "manifest:hasAccessRole": {
+      "@type": "manifest:AccessRole",
+      "@id": "envited-x:isPublic"
+    },
+    "manifest:hasCategory": {
+      "@type": "manifest:Category",
+      "@id": "envited-x:isManifest"
+    },
+    "manifest:hasFileMetadata": {
+      "@type": "manifest:FileMetadata",
+      "manifest:filePath": {
+        "@value": "./manifest_reference.json",
+        "@type": "xsd:anyURI"
+      },
+      "manifest:mimeType": {
+        "@value": "application/ld+json",
+        "@type": "xsd:string"
+      }
+    }
+  }
+}
