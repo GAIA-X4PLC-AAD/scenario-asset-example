@@ -47,6 +47,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.zip
-        asset_name: ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.zip
+        asset_path: ./Testfeld_Niedersachsen_ALKS_Scenario_4_4_1_Cut-In_No_Collision_xosc_template.zip
+        asset_name: Testfeld_Niedersachsen_ALKS_Scenario_4_4_1_Cut-In_No_Collision_xosc_template.zip
         asset_content_type: application/zip
