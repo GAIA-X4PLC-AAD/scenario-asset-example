@@ -31,7 +31,7 @@
     "manifest:hasFileMetadata": {
       "@type": "manifest:FileMetadata",
       "manifest:filePath": {
-        "@value": "./manifest_instance.json",
+        "@value": "./manifest_refernce.json",
         "@type": "xsd:anyURI"
       },
       "manifest:mimeType": {
