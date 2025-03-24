@@ -18,7 +18,7 @@
   "scenario:hasDataResource": {
     "@type": "envited-x:DataResource",
     "gx:name": {
-      "@value": "ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen",
+      "@value": "Testfeld Niedersachsen ALKS Scenario 4_4_1 Cut-In No Collision xosc template",
       "@type": "xsd:string"
     },
     "gx:description": {
@@ -185,6 +185,14 @@
       "manifest:mimeType": {
         "@value": "application/ld+json",
         "@type": "xsd:string"
+      },
+      "manifest:cid": {
+        "@value": "bafkreihc5u3mpb3nzp7cnheqv4cv7z3y5e3yxyxyruy4a3g5emob4uidha",
+        "@type": "xsd:string"
+      },
+      "manifest:fileSize": {
+        "@value": 6838,
+        "@type": "xsd:integer"
       }
     }
   }

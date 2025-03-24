@@ -1,4 +1,4 @@
-# ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen
+# Testfeld Niedersachsen ALKS Scenario 4_4_1 Cut-In No Collision xosc template
 
 An ALKS Scenario for testing the ALKS Cut-In reaction ability.
 

@@ -10,8 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout repository (+ download lfs dependencies)
       uses: actions/checkout@v4
+      with:
+          lfs: true
+    - name: Checkout LFS objects
+      run: git lfs checkout
 
     - name: Set up Node.js
       uses: actions/setup-node@v4
@@ -24,7 +28,7 @@ jobs:
     - name: Create zip file
       run: |
         cd asset
-        zip -r ../ALKS_Scenario_4_4_1_CutInNoCollision_TEMPLATE_TestfeldNiedersachsen.zip ./*
+        zip -r ../Testfeld_Niedersachsen_ALKS_Scenario_4_4_1_Cut-In_No_Collision_xosc_template.zip ./*
  
     - name: Create Release
       id: create_release
